@@ -1,0 +1,32 @@
+<div class="col" *ngIf="showUserBoard" >
+    <div class="our-culture">
+      <hr class="hr">
+      <h1 class="text-center">LISTE DES DOMAINES</h1>
+      <hr class="hr">
+      <br>
+      <div class="form-group">
+          <input type="text" class="form-control" style=" border-left: 5px solid #1A5276; border-color: #1A5276;" placeholder="Chercher" [(ngModel)]="term">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div id="transparency" class="col-lg-4" *ngFor="let domaine of domaines| filter:term">
+            
+              <div class="circle purple">
+                <h5 class="title">{{domaine.libelle}}</h5>
+                <div class="cir white collapsed" data-toggle="collapse"
+                  attr.data-target="#{{domaine.id}}" aria-expanded="false" [attr.aria-controls]="domaine.id" (click)="listFormation(domaine.id)"> <i
+                    class="fa fa-caret-right" aria-hidden="true"></i>
+                </div>
+              </div>
+          
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!showUserBoard" >
+    <!-- <app-page404></app-page404> -->
+    
+    <meta http-equiv="refresh" content="0; url=http://localhost:4200/Page404">
+ </div>

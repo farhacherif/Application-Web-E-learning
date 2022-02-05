@@ -1,0 +1,143 @@
+
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+.our-culture h2 {
+    text-align: center;
+    height: 100px;
+    color: #444444;
+    padding-top: 40px;
+    font-size: 2.8rem;
+    padding-bottom: 40px;
+}
+.bt {
+    background-color: #ffc727;
+    border-color: #ffc727;
+    border-radius: 30%;
+    height: 50px;
+    width: 140px;
+    color: #1A5276;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+
+}
+.bt:hover {
+    background-color:white; color: #1A5276; border-color: #ffc727;;
+}
+.title {
+  text-align: center;
+   color: white;
+   padding-top: 40px;
+   font-family: "Gill Sans", sans-serif;
+   font-weight: bold;
+
+}
+
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.rect {
+   position: center;
+   width: 200px;
+   height: 350px;
+   margin: 0 auto; 
+   border-radius: 25%;  
+   background-color: #1A5276; 
+    
+ 
+  
+}
+.title1 {
+    color: whitesmoke;
+    text-decoration: underline;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+.f {
+    background-color: white; 
+    border-radius: 25%;
+    width: 180px;
+    margin-top: 30%;
+  
+}
+.circle.purple {
+  background: #1A5276 ;
+}
+
+.cir {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+.cir.white {
+    background: #ffc727;
+}
+.edit {
+    margin-left: 28%;
+    color: #1A5276;
+    font-size: 32px;  
+   }
+.trash {  
+    margin-left: 7%;
+    color: red;
+    font-size: 30px;  
+    margin-left: 40%;
+}   
+
+ .text-center {
+    color: #1A5276 ;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+.col{
+    width: 80%;
+    left: 9%;
+    right: 5%;
+    margin-top: 2%;
+}
+.container {
+    margin-top: 2%;
+    float: right;
+}
+
+.text {
+    text-align: center;
+    color: white;
+}
+.modal-title {
+    color: #f5bf69 ;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+.lab {
+    color: #1A5276 ;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+.btn2 {
+    float: right;
+    width: 150px;
+    border-color: #ffc727; 
+    background-color: white ;
+    color: #1A5276;
+  }
+.btn2:hover {
+    background-color: #1A5276;
+    color: #ffc727;
+}
+
+.modal-footer {
+    height: 100%;
+    width: 100%;
+}
+img {
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+}

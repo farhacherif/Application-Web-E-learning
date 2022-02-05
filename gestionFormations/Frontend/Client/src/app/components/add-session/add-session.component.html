@@ -1,0 +1,94 @@
+<div class="col" *ngIf="showUserBoard">
+    <hr class="hr">
+    <h2 class="text-center">NOUVELLE SESSION DE FORMATION</h2>
+    <hr class="hr">
+    <h3 class="title1">Veuillez remplir ce formulaire pour ajouter une nouvelle session de formation.</h3>
+
+
+    <form [formGroup]="addSessionForm" (ngSubmit)="addSession(addSessionForm)">
+
+        <div class="form-row">
+            <div class="form-group  col-6">
+                <label for="lieu">Lieu :</label>
+                <input type="text" name="lieu" id="lieu" formControlName="lieu" class="form-control">
+                <div *ngIf="lieu?.touched">
+                    <small *ngIf="lieu?.errors?.required" class="text-danger">Ce champ est obligatoire</small>
+                </div>
+            </div>
+            <div class="form-group   col-6">
+                <label for="nb_participant">Nombre participants :</label>
+                <input nb_participant="text" name="nb_participant" id="nb_participant" formControlName="nb_participant"
+                    class="form-control">
+                <div *ngIf="nb_participant?.touched">
+                    <small *ngIf="nb_participant?.errors?.required" class="text-danger">Ce champ est obligatoire</small>
+                    <small *ngIf="nb_participant?.errors?.pattern" class="text-danger"> Ce champ est invalide il doit
+                        contenir des chiffres<br></small>
+
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6 ">
+                <label for="date_debut">Date début :</label>
+                <input type="date" name="date_debut" id="date_debut" formControlName="date_debut" class="form-control">
+                <div *ngIf="date_debut?.touched">
+                    <small *ngIf="date_debut?.errors?.required" class="text-danger">Ce champ est obligatoire<br></small>
+                </div>
+            </div>
+            <div class="form-group col-6 ">
+                <label for="date_fin">Date fin :</label>
+                <input type="date" name="date_fin" id="date_fin" formControlName="date_fin" class="form-control">
+                <div *ngIf="date_fin?.touched">
+                    <small *ngIf="date_fin?.errors?.required" class="text-danger">Ce champ est obligatoire<br></small>
+                </div>
+            </div>
+        </div>
+        <div class="form-group  ">
+            <label for="formateur">Formateur :</label>
+            <br>
+            <select class="form-select " name="formateur" id="formateur" formControlName="formateur"
+                class="form-control" (change)="selectChangeHandler1($event)">
+                <option [selected]=true disabled>Choisir un formateur</option>
+                <option value="{{formateur.id}}" *ngFor="let formateur of formateurs">{{formateur.nom}}
+                    {{formateur.prenom}}</option>
+            </select>
+            <div *ngIf="formateur?.touched">
+                <small *ngIf="formateur?.errors?.required" class="text-danger">Ce champ est obligatoire</small>
+            </div>
+        </div>
+        <div class="form-group  ">
+            <label for="formation">Formations :</label>
+            <br>
+            <select class="form-select " name="formation" id="formation" formControlName="formation"
+                class="form-control" (change)="selectChangeHandler2($event)" multiple>
+                <option [selected]=true disabled>Choisir une formation</option>
+                <option value="{{formation.id}}" *ngFor="let formation of formations">{{formation.titre}}</option>
+            </select>
+            <div *ngIf="formation?.touched">
+                <small *ngIf="formation?.errors?.required" class="text-danger">Ce champ est obligatoire</small>
+            </div>
+        </div>
+        <div class="form-group  ">
+            <label for="participant">Participants :</label>
+            <br>
+            <select class="form-select " name="participant" id="participant" formControlName="participant"
+                class="form-control" (change)="selectChangeParticipant($event)" multiple>
+                <option [selected]=true disabled>Choisir un participant</option>
+                <option value="{{participant.id}}" *ngFor="let participant of participants">{{participant.nom}} {{participant.prenom}}</option>
+            </select>
+            <div *ngIf="participant?.touched">
+                <small *ngIf="participant?.errors?.required" class="text-danger">Ce champ est obligatoire</small>
+            </div>
+        </div>
+    
+        <div class="form-group ">
+            <button type="submit" [disabled]="addSessionForm.invalid" class="btn">ENREGISTRER</button>
+        </div>
+    </form>
+
+</div>
+<div *ngIf="!showUserBoard" >
+    <!-- <app-page404></app-page404> -->
+    
+    <meta http-equiv="refresh" content="0; url=http://localhost:4200/Page404">
+ </div>

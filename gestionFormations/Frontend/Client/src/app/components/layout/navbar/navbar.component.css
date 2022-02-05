@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #1A5276;
+}
+.btn {
+    border-color: #ffc727; 
+    color: white;
+}
+.btn:hover {
+    background-color: #ffc727; 
+    color: #1A5276;
+}
+.im{
+    display: inline;
+    max-width: 5% !important;
+    margin-right: 17% !important;
+    margin-left: 2%;
+    
+}

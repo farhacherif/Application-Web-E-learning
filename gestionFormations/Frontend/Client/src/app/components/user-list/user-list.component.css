@@ -1,0 +1,62 @@
+.edit {
+    margin-left: 40%;
+    color: #1A5276;
+    font-size: 25px;  
+   }
+
+.trash {  
+    margin-left: 8%;
+    color: red;
+    font-size: 25px;  
+}
+
+.bt:hover {
+    border-color: #1A5276;
+    background-color: white;
+    color: #ffc727;
+}
+
+.bt {
+    font-family: "Gill Sans", sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    border-color: #1A5276;
+    background-color: #ffc727;
+    color: #1A5276;
+  }
+
+    
+.col-md-6 {
+    left: 25%;
+    right: 25%;
+    top: 5%;
+   
+}
+.text-center {
+    color: #1A5276 ;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+.modal-title {
+color: #ffc727;
+}
+.btn2 {
+    float: right;
+    width: 150px;
+    border-color: #ffc727; 
+    background-color: white ;
+    color: #1A5276;
+  }
+.btn2:hover {
+    background-color: #1A5276;
+    color: #ffc727;
+}
+.head {
+    background-color: #1A5276;
+    color:#ffc727;
+}
+#tab th, #tab td {
+    border-color: #ffc727;
+}

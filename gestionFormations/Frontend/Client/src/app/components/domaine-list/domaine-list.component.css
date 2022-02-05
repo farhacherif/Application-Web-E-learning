@@ -1,0 +1,80 @@
+
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+.our-culture h2 {
+    text-align: center;
+    height: 100px;
+    color: #444444;
+    padding-top: 40px;
+    font-size: 2.8rem;
+    padding-bottom: 40px;
+}
+
+.title {
+  text-align: center;
+   color: white;
+   padding-top: 50px;
+   font-family: "Gill Sans", sans-serif;
+   font-weight: bold;
+
+}
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.rect {
+   width: 180px;
+   height: 300px;
+   margin: 0 auto; 
+   background-color: whitesmoke;
+   margin-top: 20%;
+   border-radius: 25%;   
+
+  
+}
+.title1 {
+    color: #ffc727; 
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+}
+.circle.purple {
+  background: #1A5276 ;
+  margin-bottom: 25%;
+}
+
+.cir {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+.cir.white {
+    background: #ffc727;
+}
+.fa {  
+    margin-left: 40%;
+    margin-top: 15%;
+    color: white;
+    font-size: 30px;  
+ }
+ .text-center {
+    color: #ffc727; 
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+.col{
+    width: 80%;
+    left: 9%;
+    right: 5%;
+    margin-top: 2%;
+}
+.container {
+    margin-top: 5%;
+}
+
+.text {
+    text-align: center
+}

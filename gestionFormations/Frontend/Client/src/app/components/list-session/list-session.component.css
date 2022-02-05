@@ -1,0 +1,141 @@
+
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+.our-culture h2 {
+    text-align: center;
+    height: 100px;
+    color: #444444;
+    padding-top: 40px;
+    font-size: 2.8rem;
+    padding-bottom: 40px;
+    background-color: aqua
+}
+.bt {
+    background-color: #ffc727;
+    border-color: #ffc727;
+    border-radius: 30%;
+    height: 50px;
+    width: 140px;
+    color: #1A5276;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+
+}
+
+.bt:hover {
+    background-color:#1A5276; color: white; border-color: #1A5276;
+}
+.title {
+  text-align: center;
+   color: white;
+   padding-top: 40px;
+   font-family: "Gill Sans", sans-serif;
+   font-weight: bold;
+
+}
+
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.rect {
+   position: center;
+   width: 250px;
+   height: auto;
+   margin-left: 0px;
+   border-radius: 20% ;  
+   background-color: #ffc727; 
+   
+
+}
+
+
+.f {
+    background-color: white; 
+    border-radius: 25%;
+    width: 180px;
+    margin-left: 4%;
+  
+}
+
+
+.cir {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+.cir.white {
+    background: #ffc727;
+}
+.edit {
+    margin-left: 28%;
+    color: #1A5276;
+    font-size: 32px;  
+   }
+.trash {  
+    margin-left: 7%;
+    color: red;
+    font-size: 30px;  
+    margin-left: 40%;
+}   
+
+ .text-center {
+    color: #1A5276; 
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    margin-right:20%;
+    float: none; 
+    margin-top: 2%;
+    float: right;
+}
+
+.text {
+    text-align: center;
+    color: black;
+}
+.t{
+    color:black;
+    margin-left: 9%;
+}
+.modal-title {
+    color: #ffc727; ;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+.lab {
+    color: #1A5276 ;
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+}
+.btn2 {
+    float: right;
+    width: 150px;
+    border-color: #ffc727; 
+    background-color: white ;
+    color: #1A5276;
+  }
+.btn2:hover {
+    background-color: #1A5276;
+    color: #ffc727;
+}
+.modal-footer {
+    height: 100%;
+    width: 100%;
+}
+.row {
+    margin-top:5%;
+}
+
+.img {
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+  
+   margin-top: 2%;
+}
